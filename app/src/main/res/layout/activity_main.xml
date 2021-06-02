@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:srcCompat="@drawable/background_edge"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/greeting_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="50px"
+        android:paddingTop="70px"
+        />
+
+    <TextView
+        android:id="@+id/greeting_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="50px"
+        android:paddingTop="180px"
+        android:text="Mr. Pasan"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/date_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.238" />
+
+        <TextView
+            android:id="@+id/date_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:autoText="false"
+            android:fontFamily="sans-serif-medium"
+            android:text="JUNE"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.288" />
+
+        <TextView
+            android:id="@+id/date_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:autoText="false"
+            android:fontFamily="sans-serif-medium"
+            android:text="2021"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.33" />
+
+        <TextView
+
+            android:id="@+id/lbl_crop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10pt"
+            android:paddingTop="100pt"
+            android:text="CROP"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/lbl_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10pt"
+            android:paddingTop="115pt"
+            android:text="Status"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="117dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="342dp"
+            android:layout_marginEnd="242dp"
+            android:layout_marginRight="242dp"
+            android:layout_marginBottom="297dp"
+            android:outlineAmbientShadowColor="@color/black"
+            app:cardBackgroundColor="#53BD7B"
+            app:cardCornerRadius="40px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/lbl_healthy_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="15pt"
+                android:paddingTop="10pt"
+                android:text="08"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.238" />
+
+            <TextView
+                android:id="@+id/lbl_healthycrops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5pt"
+                android:paddingTop="2pt"
+                android:text="Healthy Crops"
+                android:textAllCaps="true"
+                android:textColor="#FFFBFB"
+                android:textSize="12dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="117dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="338dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="286dp"
+            app:cardBackgroundColor="#DB3E3E"
+            app:cardCornerRadius="40px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/lbl_infected_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="15pt"
+                android:paddingTop="10pt"
+                android:text="01"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.238" />
+
+            <TextView
+                android:id="@+id/lbl_infected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12pt"
+                android:paddingTop="2pt"
+                android:text="Infected"
+                android:textAllCaps="true"
+                android:textColor="#FFFBFB"
+                android:textSize="12dp"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="117dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="250pt"
+            android:layout_marginEnd="242dp"
+            android:layout_marginRight="242dp"
+            android:layout_marginBottom="297dp"
+            android:outlineAmbientShadowColor="@color/black"
+            app:cardBackgroundColor="#94A299"
+            app:cardCornerRadius="40px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/vehicle_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="15pt"
+                android:paddingTop="10pt"
+                android:text="Idle"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.238" />
+
+            <TextView
+                android:id="@+id/lbl_vehiclestatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5pt"
+                android:paddingTop="2pt"
+                android:text="Vehicle Status"
+                android:textAllCaps="true"
+                android:textColor="#FFFBFB"
+                android:textSize="12dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="117dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="245pt"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="286dp"
+            app:cardBackgroundColor="#CBC74D"
+            app:cardCornerRadius="40px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="12pt"
+                android:paddingTop="13pt"
+                android:text="15°C"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.238" />
+
+            <TextView
+                android:id="@+id/lbl_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8pt"
+                android:paddingTop="2pt"
+                android:text="Temperature"
+                android:textAllCaps="true"
+                android:textColor="#FFFBFB"
+                android:textSize="12dp"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="390pt"
+            android:layout_marginEnd="242dp"
+            android:layout_marginRight="242dp"
+            android:layout_marginBottom="297dp"
+            android:outlineAmbientShadowColor="@color/black"
+            app:cardBackgroundColor="#53BD7B"
+            app:cardCornerRadius="40px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/icon_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icon_map"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp">
+
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/lbl_map"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="10pt"
+                android:paddingTop="18pt"
+                android:text="MAP"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.238" />
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="420dp"
+            android:layout_marginLeft="420dp"
+            android:layout_marginTop="390pt"
+            android:layout_marginEnd="242dp"
+            android:layout_marginRight="242dp"
+            android:layout_marginBottom="297dp"
+            android:outlineAmbientShadowColor="@color/black"
+            app:cardBackgroundColor="#DB3E3E"
+            app:cardCornerRadius="40px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/icon_maps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/icon_signout">
+
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/lbl_signout"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="5pt"
+                android:paddingTop="18pt"
+                android:text="SIGN OUT"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.238" />
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

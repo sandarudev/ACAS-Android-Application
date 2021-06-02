@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_login3"
+        android:layout_width="match_parent"
+        android:layout_height="332dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/background_infected" />
+
+    <TextView
+        android:id="@+id/lbl_healthy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="25pt"
+        android:paddingTop="15pt"
+        android:text="Infected"
+        android:textColor="@color/white"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/lbl_crops2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="25pt"
+        android:paddingTop="34pt"
+        android:text="Crops"
+        android:textColor="@color/white"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/login_description3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="25pt"
+        android:paddingTop="60pt"
+
+        android:text="Find out the analysis of infected crops"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+</RelativeLayout>

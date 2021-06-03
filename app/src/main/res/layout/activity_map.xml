@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Map">
 
     <ImageView
-        android:id="@+id/background_login4"
+        android:id="@+id/background_login3"
         android:layout_width="match_parent"
         android:layout_height="315dp"
         android:contentDescription="TODO"
         app:srcCompat="@drawable/background_map" />
 
     <TextView
-        android:id="@+id/lbl_crops3"
+        android:id="@+id/lbl_crops2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
@@ -23,7 +25,7 @@
         android:textSize="45dp" />
 
     <TextView
-        android:id="@+id/login_description4"
+        android:id="@+id/login_description3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"

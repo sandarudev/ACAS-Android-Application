@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ACAS">
+        <activity android:name=".Map"></activity>
+        <activity android:name=".InfectedCrops" />
+        <activity android:name=".HealthyCrops" />
+        <activity android:name=".Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

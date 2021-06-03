@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".HealthyCrops">
 
     <ImageView
-        android:id="@+id/background_login3"
+        android:id="@+id/background_login"
         android:layout_width="match_parent"
-        android:layout_height="332dp"
+        android:layout_height="326dp"
         android:contentDescription="TODO"
-        app:srcCompat="@drawable/background_infected" />
+        app:srcCompat="@drawable/background_healthycrops" />
 
     <TextView
-        android:id="@+id/lbl_healthy2"
+        android:id="@+id/lbl_healthy3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:paddingLeft="25pt"
         android:paddingTop="15pt"
-        android:text="Infected"
+        android:text="Healthy"
         android:textColor="@color/white"
         android:textSize="45dp" />
 
     <TextView
-        android:id="@+id/lbl_crops2"
+        android:id="@+id/lbl_crops4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
@@ -34,14 +36,35 @@
         android:textSize="45dp" />
 
     <TextView
-        android:id="@+id/login_description3"
+        android:id="@+id/login_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:paddingLeft="25pt"
         android:paddingTop="60pt"
 
-        android:text="Find out the analysis of infected crops"
+        android:text="Find out the analysis of healthy crops"
         android:textColor="@color/white"
         android:textSize="14dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
 </RelativeLayout>
